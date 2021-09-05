@@ -1,0 +1,43 @@
+@server = localhost:5000
+
+
+# Endpoints
+
+# Get all task
+###
+GET http://{{server}}/todo/api/v1.0/tasks
+
+
+# Create New task
+###
+POST http://{{server}}//todo/api/v1.0/tasks
+Content-Type: application/json
+
+{
+    "id": 3,
+    "title": "rai",
+    "description": "Ravi@143",
+    "done": "True"
+}
+
+
+# Get particular task
+###
+GET HTTP://{{server}}/todo/api/v1.0/tasks/2
+
+
+# Update particular task
+### 
+PUT HTTP://{{server}}/todo/api/v1.0/tasks/3
+Content-Type: application/json
+
+{
+    "title": "Django ORM",
+    "description": "CREATE NEW DJNAGO MODELS AND MIGRATE THE DATA",
+    "done": "True"
+}
+
+
+# Delete particular task
+###
+DELETE HTTP://{{server}}/todo/api/v1.0/tasks/4
